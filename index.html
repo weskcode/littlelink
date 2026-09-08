@@ -1,38 +1,20 @@
 <!DOCTYPE html>
-
-<!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
--->
-
-<html class="theme-auto" lang="en"> <!-- Update `class="theme-auto"` with your preference -->
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
     <title>Wes Keetch</title>
-    <link rel="icon" type="image/png" href="images/avatar.png"> <!-- Update this with your own favicon -->
+    <link rel="icon" type="image/png" href="images/avatar.png">
 
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
     <meta name="description" content="Wes Keetch — iOS developer in NYC. GitHub, X, LinkedIn, and links to NeuroNook, RHOIDS, Words of Winter, QuoteReaper, and SunHat.">
-
-    <!-- Canonical URL - Helps prevent duplicate content issues -->
     <link rel="canonical" href="https://weskcode.github.io/littlelink/">
-
-    <!-- Author Information -->
     <meta name="author" content="Wes Keetch">
 
-    <!-- Browser UI Color - Matches the default light/dark theme backgrounds -->
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f7f5f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#191512" media="(prefers-color-scheme: dark)">
 
-    <!-- Social Sharing (Open Graph & Twitter) - Uncomment and fill in to control how your page
-         looks when shared on social platforms and in chat apps.
-         og:url and og:image must be full absolute URLs. -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Wes Keetch">
     <meta property="og:description" content="iOS developer in NYC. GitHub, X, LinkedIn, and links to NeuroNook, RHOIDS, Words of Winter, QuoteReaper, and SunHat.">
@@ -40,82 +22,85 @@
     <meta property="og:image" content="https://weskcode.github.io/littlelink/images/avatar@2x.png">
     <meta name="twitter:card" content="summary">
 
-    <!-- Font Preloads - Lets the browser fetch fonts in parallel with the stylesheets -->
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Public+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
-
-    <!-- LittleLink Extended Stylesheet (Optional) -->
-    <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
-    <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
-         Remove comments if you've added LittleLink Extended dependencies -->
-
+    <link rel="stylesheet" href="css/ship.css">
   </head>
 
-<body>
+  <body>
+    <div class="wrap">
 
-    <div class="container">
-        <div class="column">
-          <main>
+      <div class="head">
+        <img class="avatar" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="Wes Keetch" width="128" height="128" fetchpriority="high">
+        <h1>Wes Keetch</h1>
+      </div>
+      <p class="stamp">iOS developer <span class="accent">&middot;</span> v2026.1 <span class="accent">&middot;</span> shipped from NYC</p>
+      <p class="bio">Building small, focused apps in Swift.</p>
 
-            <!--
-              By default, the Avatar is rounded. Use the following:
-              - avatar--rounded: Automatically rounds the image
-              - avatar--soft: Slightly rounds the image
-              - avatar--none: Removes any rounding
+      <div class="group" style="--i:0">
+        <p class="group__label">Connect</p>
+        <a class="row" href="https://github.com/weskcode" target="_blank" rel="noopener">GitHub</a>
+        <a class="row" href="https://x.com/weskcode" target="_blank" rel="noopener">X</a>
+        <a class="row" href="https://www.linkedin.com/in/wesley-keetch/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
 
-              Be sure to replace the src with your own image path and update the alt text
-            -->
-            <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="Wes Keetch" width="128" height="128" fetchpriority="high">
+      <div class="group" style="--i:1">
+        <p class="group__label">Apps</p>
 
-            <!-- Replace with your name or brand -->
-            <h1>Wes Keetch</h1>
+        <div class="app">
+          <a class="row" href="https://neuronook.apphq.online/" target="_blank" rel="noopener">NeuroNook</a>
+          <p class="app__socials">
+            <a href="https://apps.apple.com/us/app/neuronook/id6745560129" target="_blank" rel="noopener">[app store]</a>
+          </p>
+        </div>
 
-            <!-- Add a short description about yourself or your brand -->
-            <p>iOS developer in NYC. Building small, focused apps in Swift.</p>
+        <div class="app">
+          <a class="row" href="https://rhoids.apphq.online/" target="_blank" rel="noopener">RHOIDS</a>
+          <p class="app__socials">
+            <a href="https://apps.apple.com/us/app/toilet-health-timer-rhoids/id6772689484" target="_blank" rel="noopener">[app store]</a>
+            <a href="https://www.instagram.com/rhoids_app/" target="_blank" rel="noopener">[instagram]</a>
+            <a href="https://www.tiktok.com/@rhoids_app?lang=en" target="_blank" rel="noopener">[tiktok]</a>
+            <a href="https://x.com/rhoids_app" target="_blank" rel="noopener">[x]</a>
+            <a href="https://github.com/weskcode/rhoids" target="_blank" rel="noopener">[github]</a>
+          </p>
+        </div>
 
-            <!-- All your buttons go here -->
-            <nav class="button-stack" aria-label="Links">
+        <div class="app">
+          <a class="row" href="https://words-of-winter.apphq.online/" target="_blank" rel="noopener">Words of Winter</a>
+        </div>
 
-              <a class="button button-github" href="https://github.com/weskcode" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a>
-              <a class="button button-x" href="https://x.com/weskcode" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="X Logo">Follow on X</a>
-              <a class="button button-linked" href="https://www.linkedin.com/in/wesley-keetch/" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a>
+        <div class="app">
+          <a class="row" href="https://quotereaper.apphq.online/" target="_blank" rel="noopener">QuoteReaper</a>
+        </div>
 
-              <p class="link-group-label">Apps</p>
-              <a class="button button-default" href="https://neuronook.apphq.online/" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Website Icon">NeuroNook</a>
-              <a class="button button-default" href="https://rhoids.apphq.online/" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Website Icon">RHOIDS</a>
-              <a class="button button-default" href="https://words-of-winter.apphq.online/" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Website Icon">Words of Winter</a>
-              <a class="button button-default" href="https://quotereaper.apphq.online/" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Website Icon">QuoteReaper</a>
-              <a class="button button-default" href="https://sunhat.apphq.online/" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Website Icon">SunHat</a>
+        <div class="app">
+          <a class="row" href="https://sunhat.apphq.online/" target="_blank" rel="noopener">SunHat</a>
+          <p class="app__socials">
+            <a href="https://github.com/weskcode/sunhat" target="_blank" rel="noopener">[github]</a>
+          </p>
+        </div>
 
-              <!--
-                App Store group: add real listing URLs here as they ship, then
-                uncomment the label + buttons below. Icon: images/icons/apple.svg,
-                class: button-appstore.
+        <div class="app">
+          <a class="row" href="https://cheatsheet.apphq.online/" target="_blank" rel="noopener">CheatSheet</a>
+          <p class="app__socials">
+            <a href="https://github.com/weskcode/cheatsheet" target="_blank" rel="noopener">[github]</a>
+          </p>
+        </div>
+      </div>
 
-                <p class="link-group-label">App Store</p>
-                <a class="button button-appstore" href="#" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/apple.svg" alt="Apple Logo">NeuroNook on the App Store</a>
-              -->
+      <div class="group" style="--i:2">
+        <p class="group__label">Contact</p>
+        <a class="row" href="mailto:wesleyk@duck.com">Email me</a>
+      </div>
 
-              <p class="link-group-label">Contact</p>
-              <a class="button button-default" href="mailto:wesleyk@duck.com" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email me</a>
-
-      </nav>
-      </main>
-
-      <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
       <footer>
-        <a href="privacy.html">Privacy</a> | Built with <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
+        <a href="privacy.html">Privacy</a> &middot; built with <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
       </footer>
 
     </div>
-  </div>
-
-</body>
+  </body>
 
 </html>
